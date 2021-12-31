@@ -1,0 +1,13 @@
+_target_: src.datamodules.mnist_datamodule.ZSLDataModule
+
+data_dir: ${data_dir} # data_dir is specified in config.yaml
+dataset: AWA2
+image_embedding: res101
+class_embedding: att
+preprocessing: True
+standardization: False
+validation: False
+num_workers: 0
+pin_memory: False
+batch_size: 64
+
